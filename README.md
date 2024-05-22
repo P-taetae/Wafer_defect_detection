@@ -39,8 +39,6 @@ tqdm
 ## How to run our code
 1. defect_detection
 
-This code is written based on the following code : [https://github.com/P-taetae/Wafer_defect_detection/edit/main/README.md](https://github.com/amazon-science/patchcore-inspection)
-
 Follow the 1step_defect_detection
 Training :
 step1_1_train_k_means.py -> step1_2_normal_augmentation.py -> step1_3_run_patchcore.py -> step1_4_abnormal_augmentation_magnetic.sh ->step1_5_reset_folder.py
@@ -50,11 +48,12 @@ test1_1_k_means.py -> test1_2_load_and_evaluate_magnetic.sh
 
 2. defect_classification
 
-This code is written based on the following code : [https://github.com/P-taetae/Wafer_defect_detection/edit/main/README.md](https://github.com/amazon-science/patchcore-inspection)](https://github.com/shijxcs/LIFT)
 
 After the 1step_defect_detection
 
 Use main.py to train and test the model.
+
+This code is written based on the following code : https://github.com/amazon-science/patchcore-inspection , https://github.com/shijxcs/LIFT
 
 ## Citation
 
