@@ -40,6 +40,7 @@ tqdm
 1. defect_detection
 
 Follow the 1step_defect_detection
+
 Training :
 step1_1_train_k_means.py -> step1_2_normal_augmentation.py -> step1_3_run_patchcore.py -> step1_4_abnormal_augmentation_magnetic.sh ->step1_5_reset_folder.py
 
