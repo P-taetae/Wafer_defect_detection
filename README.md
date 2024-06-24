@@ -23,18 +23,8 @@ This approach can improve the defect detect performance on wafer data with vario
 - We introduce SegMix, an advanced augmentation technique based on CutMix\cite{cutmix}, designed to refine wafer defect image augmentation.
 SegMix, utilizing segmentation maps from a multi-class memory bank, precisely extracts and integrates defect areas, enhancing defect classification accuracy and aiding in adjusting thresholds for the multi-memory bank system.
 
-## Prerequisites:
-````
-python=3.8
-torch==1.10.0+cu111
-torchvision==0.11.0+cu111
-torchaudio==0.10.0
-pytorch-fast-transformers
-vit-pytorch
-pykernel
-wandb
-tqdm
-````
+## requirements:
+Our results were computed using Python 3.8, with packages and respective version noted in requirements.txt
 
 ## How to run our code
 1. defect_detection
@@ -57,7 +47,7 @@ Use main.py to train and test the model.
 This code is written based on the following code : https://github.com/amazon-science/patchcore-inspection , https://github.com/shijxcs/LIFT
 
 ## Citation
-
+---
 
 ## License
 
