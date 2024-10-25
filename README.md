@@ -2,7 +2,7 @@
 
 Official Pytorch implementation of [A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects] (On review).
 
-Authors: Taekyeong Park, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
+Authors: Taekyeong Park, Yongho Son, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
 
 
 ## Abstract
