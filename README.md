@@ -32,10 +32,19 @@ Our results were computed using Python 3.8, with packages and respective version
 Follow the 1step_defect_detection
 
 Training :
-step1_1_train_k_means.py -> step1_2_normal_augmentation.py -> step1_3_run_patchcore.py -> step1_4_abnormal_augmentation_magnetic.sh ->step1_5_reset_folder.py
+```
+python step1_1_train_k_means.py
+python step1_2_normal_augmentation.py
+python step1_3_run_patchcore.py
+bash step1_4_abnormal_augmentation_magnetic.sh
+python step1_5_reset_folder.py
+```
 
 Testing :
-test1_1_k_means.py -> test1_2_load_and_evaluate_magnetic.sh 
+```
+python test1_1_k_means.py
+bash test1_2_load_and_evaluate_magnetic.sh 
+```
 
 2. defect_classification
 
