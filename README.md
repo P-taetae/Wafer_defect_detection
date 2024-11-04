@@ -49,9 +49,9 @@ Follow the 1step_defect_detection
 Training :
 ```
 cd 1step_defect_detetion/
-python step1_1_train_k_means.py
-python step1_2_normal_augmentation.py
-python step1_3_run_patchcore.py
+python step1_1_train_k_means.py --train_data_path your_train_data_path --test_data_path your_test_data_path
+python step1_2_normal_augmentation.py --dataset dataset_name --n_clusters num_of_chosen_clusters
+bash step1_3_run_patchcore_magnetic.sh
 bash step1_4_abnormal_augmentation_magnetic.sh
 python step1_5_reset_folder.py
 ```
