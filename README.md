@@ -23,8 +23,23 @@ This approach can improve the defect detect performance on wafer data with vario
 - We introduce SegMix, an advanced augmentation technique based on CutMix\cite{cutmix}, designed to refine wafer defect image augmentation.
 SegMix, utilizing segmentation maps from a multi-class memory bank, precisely extracts and integrates defect areas, enhancing defect classification accuracy and aiding in adjusting thresholds for the multi-memory bank system.
 
-## requirements:
+## Requirements:
 Our results were computed using Python 3.8, with packages and respective version noted in requirements.txt
+````
+conda create -n waferdc python=3.8 -y
+conda activate waferdc
+
+pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+conda install pytorch::faiss-gpu
+
+git clone https://github.com/P-taetae/Wafer_defect_detection.git
+cd Wafer_defect_detection
+pip install -r requirement.txt
+````
+
+## Data preparation:
+Download the following dataset:
+- MTD dataset [[Official]](https://drive.google.com/file/d/1HbOv2rG2ODKjGvFx4wYm3iI01cOCOsRR/view?usp=sharing)
 
 ## How to run our code
 1. defect_detection
@@ -43,7 +58,7 @@ python step1_5_reset_folder.py
 Testing :
 ```
 python test1_1_k_means.py
-bash test1_2_load_and_evaluate_magnetic.sh 
+bash test1_2_load_and_evaluate_magnetic.sh
 ```
 
 2. defect_classification
