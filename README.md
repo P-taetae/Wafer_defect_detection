@@ -48,6 +48,7 @@ Follow the 1step_defect_detection
 
 Training :
 ```
+cd 1step_defect_detetion/
 python step1_1_train_k_means.py
 python step1_2_normal_augmentation.py
 python step1_3_run_patchcore.py
