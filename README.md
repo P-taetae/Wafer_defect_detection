@@ -1,6 +1,6 @@
 # A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects
 
-Official Pytorch implementation of [A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects] (On review).
+Official Pytorch implementation of [A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects] (Under review).
 
 Authors: Taekyeong Park, Yongho Son, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
 
@@ -51,7 +51,10 @@ bash test1_2_load_and_evaluate_magnetic.sh
 
 After the 1step_defect_detection
 
-Use main.py to train and test the model.
+Use following command to train and test the model.
+```
+python main.py
+```
 
 This code is written based on the following code : https://github.com/amazon-science/patchcore-inspection , https://github.com/shijxcs/LIFT
 
