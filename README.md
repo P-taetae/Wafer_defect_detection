@@ -39,7 +39,7 @@ pip install -r requirement.txt
 
 ## Data preparation:
 Download the following dataset:
-- MTD dataset [[Official]](https://drive.google.com/file/d/1HbOv2rG2ODKjGvFx4wYm3iI01cOCOsRR/view?usp=sharing)
+- MTD dataset [[our link]](https://drive.google.com/file/d/1HbOv2rG2ODKjGvFx4wYm3iI01cOCOsRR/view?usp=sharing)
 
 ## How to run our code
 1. defect_detection
