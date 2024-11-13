@@ -14,13 +14,14 @@ Finally, we pass defect-classified images through a parameter-efficient fine-tun
 We rigorously tested WaferDC on a proprietary SEM wafer dataset and the public DTD-Synthetic and Magnetic Tile Defect (MTD) datasets. The results confirm the effectiveness of our method in improving defect detection and classification in wafer manufacturing.
 
 ## Contribution
-- We introduce WaferDC, a novel stratified augmentation-guided approach designed to address the imbalance in learning datasets for wafer defects, which typically exhibit a long-tailed distribution, aiming to enhance defect detection and classification performance in SEM image environments.
+- We introduce WaferDC, designed to address the three challenges mentioned above and enhance wafer defect detection and classification accuracies in SEM images.
 
-- To improve the performance of semiconductor image defect detection, we propose a multi-class memory bank. 
-This approach can improve the defect detect performance on wafer data with various normal images, and this improvement contributes to the quality of the augmented data used later.
+- To improve the performance of wafer defect detection across various SEM image backgrounds and scales, we propose a novel multi-cluster memory bank strategy, where each cluster represents a different background type and scale in wafer defects. This also contributes to the enhanced quality of augmented defect images later on.
 
-- We introduce SegMix, an advanced augmentation technique based on CutMix\cite{cutmix}, designed to refine wafer defect image augmentation.
-SegMix, utilizing segmentation maps from a multi-class memory bank, precisely extracts and integrates defect areas, enhancing defect classification accuracy and aiding in adjusting thresholds for the multi-memory bank system.
+- We introduce a new defect augmentation method called SegMix, which utilizes the anomaly segmentation map from the multi-cluster memory bank to extract precise defect areas and adopts smooth blending to synthesize realistic SEM images with defects.
+As will be shown later, the added synthetic data is not just confined to train the defect classifier but also used to adjust defect detection thresholds for the multi-cluster memory bank, leading to an overall enhanced framework performance.
+
+- We have extensively evaluated WaferDC on a proprietary SEM wafer dataset and public DTD-Synthetic and the Magnetic Tile Defect (MTD) datasets. Our experimental results demonstrate the capability of our approach in enhancing defect detection and classification performance.
 
 ## Requirements:
 Our results were computed using Python 3.8, with packages and respective version noted in requirements.txt
@@ -80,3 +81,4 @@ This code is written based on the following code : https://github.com/amazon-sci
 
 
 ## Acknowledgement
+This work was in part supported by Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, in part by the Technology Innovation Program (1415178807, Development of Industrial Intelligent Technology for Manufacturing, Process, and Logistics) funded by the Ministry of Trade, Industry & Energy (Korea) and in part by the Institute of Information & communications Technology Planning & Evaluation (IITP) under the artificial intelligence semiconductor support program to nurture the best talents (IITP-(2024)-RS-2023-00253914) grant funded by the Korean government.
