@@ -7,12 +7,11 @@ Authors: Taekyeong Park, Yongho Son, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
 
 ## Abstract
 In semiconductor engineering, high yield of wafers relies on accurate detection and classification of wafer defects.
-The primary challenges are: i) variable backgrounds and differing image scales, which complicate traditional classification techniques; ii) a significantly smaller amount of defect data compared to normal data; and iii) an imbalanced data distribution with a long-tail of defect types. Both ii) and iii) challenge traditional classification techniques.
-To address these issues, we introduce a stratified framework called WaferDC, designed for detecting and classifying wafer defects from scanning electron microscope (SEM) images. 
-Our framework comprises three modules, namely defect detection, defect classification and defect augmentation all of which are intertwined for optimal  performance.
-For the detection phase, we introduce a multi-class memory bank to improve robustness of defect detection against different textures by separating input data based on texture characteristics.
-For the classification stage, we pass defect-classified images through a PEFT-based classifier\cite{pel} utilizing a vision transformer.
-We employ a new augmentation module called SegMix to create synthetic defect images utilizing anomaly heatmaps thereby raising the reliability of defect detection and classification under long-tailed imbalanced environment.
+The dataset for detecting wafer defects presents three primary challenges: i) different background types, ii) variable image or defect scales, and iii) imbalanced data with a long-tailed distribution of defect types. These challenges create significant limitations for traditional classification techniques. To address these issues, we propose a stratified framework called WaferDC, designed specifically for detecting and classifying wafer defects from scanning electron microscope (SEM) images.
+Our framework achieves high defect detection performance on SEM wafer images by utilizing a multi-cluster memory bank, which effectively handles the challenges of i) variable background types and ii) differing image or defect scales.
+Building on this robust detection, we propose SegMix, a novel defect augmentation technique based on anomaly heatmaps, which enhances the reliability of defect detection and classification in a iii) long-tailed imbalanced environment. 
+Finally, we pass defect-classified images through a parameter-efficient fine-tuning (PEFT)-based classifier utilizing a vision transformer (ViT) architecture, further improving overall defect detection and classification performance.
+We rigorously tested WaferDC on a proprietary SEM wafer dataset and the public DTD-Synthetic and Magnetic Tile Defect (MTD) datasets. The results confirm the effectiveness of our method in improving defect detection and classification in wafer manufacturing.
 
 ## Contribution
 - We introduce WaferDC, a novel stratified augmentation-guided approach designed to address the imbalance in learning datasets for wafer defects, which typically exhibit a long-tailed distribution, aiming to enhance defect detection and classification performance in SEM image environments.
