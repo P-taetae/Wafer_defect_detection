@@ -1,6 +1,6 @@
-# A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects
+# Long-tailed Detection and Classification of Wafer Defects from SEM Images Robust to Diverse Image Backgrounds and Defect Scales
 
-Official Pytorch implementation of [A Stratified Augmentation-Guided Approach for Detection and Classification of Wafer Defects] (Under review).
+Official Pytorch implementation of [Long-tailed Detection and Classification of Wafer Defects from SEM Images Robust to Diverse Image Backgrounds and Defect Scales] (Under review).
 
 Authors: Taekyeong Park, Yongho Son, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
 
