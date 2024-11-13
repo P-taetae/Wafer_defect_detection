@@ -78,7 +78,7 @@ This code is written based on the following code : https://github.com/amazon-sci
 ---
 
 ## License
-
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 
 ## Acknowledgement
 This work was in part supported by Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, in part by the Technology Innovation Program (1415178807, Development of Industrial Intelligent Technology for Manufacturing, Process, and Logistics) funded by the Ministry of Trade, Industry & Energy (Korea) and in part by the Institute of Information & communications Technology Planning & Evaluation (IITP) under the artificial intelligence semiconductor support program to nurture the best talents (IITP-(2024)-RS-2023-00253914) grant funded by the Korean government.
