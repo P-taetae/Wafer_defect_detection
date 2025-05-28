@@ -2,7 +2,7 @@
 
 Official Pytorch implementation of [Long-tailed Detection and Classification of Wafer Defects from SEM Images Robust to Diverse Image Backgrounds and Defect Scales] (Under review).
 
-Authors: Taekyeong Park, Yongho Son, Sanghyuk Moon, Seungju Han, Je Hyeong Hong
+Authors: Taekyeong Park*, Yongho Son*, Sanghyuk Moon*, Seungju Han, Je Hyeong Hong
 
 
 ## Abstract
